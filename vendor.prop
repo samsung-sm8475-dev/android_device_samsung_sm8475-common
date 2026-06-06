@@ -65,7 +65,7 @@ ro.bluetooth.a2dp_offload.supported=true
 ro.camera.enableCamera1MaxZsl=1
 
 # Crypto
-ro.crypto.metadata_init_delete_all_keys.enabled=true
+ro.crypto.metadata_init_delete_all_keys.enabled=false
 
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
@@ -181,7 +181,7 @@ ro.vendor.nfc.support.uicc=true
 persist.backup.ntpServer=0.pool.ntp.org
 
 # Netflix
-ro.netflix.bsp_rev=Q8550-36432-1
+ro.netflix.bsp_rev=Q8450-34634-1
 
 # PASR
 vendor.pasr.activemode.enabled=true
