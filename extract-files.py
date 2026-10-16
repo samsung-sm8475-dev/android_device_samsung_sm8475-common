@@ -54,8 +54,8 @@ blob_fixups: blob_fixups_user_type = {
         .sig_replace('60 0E 40 F9 E1 03 15 AA 82 0C 80 52 E3 03 14 AA', '60 0E 40 F9 E1 03 15 AA 82 0C 80 52 30 08 0D D2'),
     'vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_0.xml': blob_fixup()
         .regex_replace('default0', 'software'),
-    'vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc': blob_fixup()
-        .regex_replace('.*disabled.*\n', ''),
+#    'vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc': blob_fixup()
+#        .regex_replace('.*disabled.*\n', ''),
     ('vendor/etc/media_codecs_taro.xml'): blob_fixup()
         .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio).*\n', ''),
     'vendor/lib64/libqcodec2_core.so': blob_fixup()
@@ -71,12 +71,12 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libsnapdragoncolor-manager.so',
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2_1.so'),
-    'vendor/lib64/libsnaplite_native.so': blob_fixup()
-        .clear_symbol_version('AHardwareBuffer_acquire')
-        .clear_symbol_version('AHardwareBuffer_describe')
-        .clear_symbol_version('AHardwareBuffer_lock')
-        .clear_symbol_version('AHardwareBuffer_release')
-        .clear_symbol_version('AHardwareBuffer_unlock'),
+#    'vendor/lib64/libsnaplite_native.so': blob_fixup()
+#        .clear_symbol_version('AHardwareBuffer_acquire')
+#        .clear_symbol_version('AHardwareBuffer_describe')
+#        .clear_symbol_version('AHardwareBuffer_lock')
+#        .clear_symbol_version('AHardwareBuffer_release')
+#        .clear_symbol_version('AHardwareBuffer_unlock'),
 
 }  # fmt: skip
 
