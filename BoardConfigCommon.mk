@@ -44,15 +44,15 @@ BOARD_RAMDISK_USE_LZ4 := true
 TARGET_BOOTLOADER_BOARD_NAME := taro
 
 # DTB / DTBO
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
-TARGET_NEEDS_DTBOIMAGE := true
+#BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+#BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
+#TARGET_NEEDS_DTBOIMAGE := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
 
 # Kernel
-BOARD_BOOTCONFIG := \
+#BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
     androidboot.usbcontroller=a600000.dwc3
@@ -68,14 +68,12 @@ BOARD_KERNEL_CMDLINE := \
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
-BOARD_USES_GENERIC_KERNEL_IMAGE := true
+#BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
-ifneq ($(TARGET_FORCE_PREBUILT_KERNEL), true)
-TARGET_KERNEL_SOURCE := kernel/samsung/sm8475
+TARGET_KERNEL_SOURCE := kernel/samsung/sm8450
 
 # Kernel modules
-TARGET_KERNEL_EXT_MODULE_ROOT := kernel/samsung/sm8475-modules
-endif
+#TARGET_KERNEL_EXT_MODULE_ROOT := kernel/samsung/sm8450-modules
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
