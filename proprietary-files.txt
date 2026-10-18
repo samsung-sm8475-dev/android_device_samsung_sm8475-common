@@ -1,4 +1,4 @@
-# Unpinned blobs from b4qxxx-user 16 BP2A.250605.031.A3 F721BXXSCIZE1 release-keys
+# Unpinned blobs from b4qxxx-user 16 BP2A.250605.031.A3 F721BXXSCIZH3 release-keys
 
 # ADSP
 vendor/bin/adsprpcd
@@ -363,7 +363,7 @@ vendor/lib64/libsrib_humanaware_engine.camera.samsung.so
 vendor/lib64/libssengine.uniplugin@1.0.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
-vendor/lib64/libtensorflowlite_gpu.camera.samsung.so
+#vendor/lib64/libtensorflowlite_gpu.camera.samsung.so
 vendor/lib64/libtensorflowLite.singletake.camera.samsung.so
 vendor/lib64/libtensorflowlite.camera.samsung.so
 vendor/lib64/libtfestriping.so
@@ -658,7 +658,7 @@ vendor/lib64/hw/vulkan.adreno.so
 vendor/bin/hermesd
 vendor/etc/init/hermesd.rc
 vendor/etc/secnvm/k250a_47000301_0.img
-vendor/etc/secnvm/k250a_47000304_c.img
+vendor/etc/secnvm/k250a_47000305_c.img
 vendor/etc/secnvm/k250a_47000306_1.img
 vendor/lib64/libese-grdg.so
 vendor/lib64/libhermes.so
