@@ -70,10 +70,10 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
-TARGET_KERNEL_SOURCE := kernel/samsung/sm8475
+TARGET_KERNEL_SOURCE := kernel/samsung/sm8450
 
 # Kernel modules
-TARGET_KERNEL_EXT_MODULE_ROOT := kernel/samsung/sm8475-modules
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/samsung/sm8450-modules
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
